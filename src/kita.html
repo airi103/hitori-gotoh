@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Kita Ikuyo - Bocchi the Rock!" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Bocchi - Kita Ikuyo" />
+    <meta property="og:description" content="Kita Ikuyo - Bocchi the Rock!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../images/ryo-display.jpg" />
+    <meta property="og:url" content="" />
+    <title>Kita Ikuyo</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <style>
+      @media (max-width: 640px) {
+        .nav-text {
+          font-size: 0.875rem;
+        }
+        .logo-img {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+      }
+
+      @media (min-width: 641px) and (max-width: 1024px) {
+        .nav-text {
+          font-size: 1rem;
+        }
+        .logo-img {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+
+      .blur-bg {
+        animation: pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 0.5;
+          transform: translate(-50%, -50%) scale(1);
+        }
+        50% {
+          opacity: 0.8;
+          transform: translate(-50%, -50%) scale(1.1);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 min-h-screen">
+    <nav
+      class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100"
+    >
+      <!-- Animated blurred background -->
+      <div class="absolute inset-0 overflow-hidden">
+        <div
+          class="blur-bg absolute left-1/2 top-1/2 w-40 h-40 bg-gradient-to-r from-indigo-200/30 via-purple-200/30 to-pink-200/30 blur-3xl rounded-full"
+        ></div>
+      </div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 sm:h-20">
+          <!-- Left side -->
+          <div class="flex-1 flex justify-start">
+            <a href="characters.html" class="relative group px-3 sm:px-4">
+              <span
+                class="nav-text text-gray-800 font-medium tracking-wide group-hover:text-indigo-600 transition-colors duration-200"
+                >Characters</span
+              >
+              <!-- Active page indicator -->
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-indigo-500 scale-x-100 transition-transform duration-200"
+              ></span>
+            </a>
+          </div>
+
+          <!-- Center logo -->
+          <div
+            class="flex-shrink-0 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+          >
+            <a
+              href="index.html"
+              class="block transition-transform duration-200 hover:scale-110"
+            >
+              <img
+                class="logo-img w-12 h-12"
+                src="../images/kessoku.svg"
+                alt="Kessoku Band"
+              />
+            </a>
+          </div>
+
+          <!-- Right side -->
+          <div class="flex-1 flex justify-end">
+            <a href="music.html" class="relative group px-3 sm:px-4">
+              <span
+                class="nav-text text-gray-800 font-medium tracking-wide group-hover:text-indigo-600 transition-colors duration-200"
+                >Music</span
+              >
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-indigo-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-200"
+              ></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="mt-5 text-center">
+      <span class="text-3xl sm:text-4xl font-bold">Kita Ikuyo</span>
+      <span class="block text-2xl sm:text-3xl mt-2 text-gray-700"
+        >(喜多 郁代)</span
+      >
+    </h1>
+
+    <main class="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+      <section>
+        <figure class="mb-6">
+          <div
+            class="relative aspect-video rounded-lg shadow-lg overflow-hidden"
+          >
+            <img
+              class="w-full h-full object-cover"
+              src="../images/kita-display.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <figcaption class="mt-2 text-sm text-gray-600 text-center">
+            A picture of
+            <a
+              href="#A1"
+              class="underline text-gray-800 hover:text-indigo-600 transition-colors"
+              >Kita Ikuyo</a
+            >, Nijika Ijichi and Hitori Gotoh from <em>Bocchi the Rock!</em>
+          </figcaption>
+        </figure>
+
+        <h2 class="text-2xl font-bold text-center mb-6">General Information</h2>
+        <dl
+          class="bg-white rounded-xl shadow-md p-6 space-y-2 max-w-md mx-auto"
+        >
+          <h2 class="text-xl font-bold text-center text-gray-700">
+            <span class="inline-flex items-baseline">
+              <img
+                src="../images/kita-icon.jpg"
+                alt=""
+                class="self-center w-6 h-6 rounded-full mx-2"
+              />
+              Kita Ikuyo
+            </span>
+          </h2>
+          <div class="grid grid-cols-2 gap-x-4 p-2 rounded-lg">
+            <dt class="text-sm font-medium text-gray-500">Birthday</dt>
+            <dd class="text-base sm:text-lg text-gray-900">
+              <time datetime="04-21">April 21</time>
+            </dd>
+          </div>
+          <div class="grid grid-cols-2 gap-x-4 p-2 rounded-lg">
+            <dt class="text-sm font-medium text-gray-500">Age</dt>
+            <dd class="text-base sm:text-lg text-gray-900">15-16</dd>
+          </div>
+          <div class="grid grid-cols-2 gap-x-4 p-2 rounded-lg">
+            <dt class="text-sm font-medium text-gray-500">Gender</dt>
+            <dd class="text-base sm:text-lg text-gray-900">Female</dd>
+          </div>
+          <div class="grid grid-cols-2 gap-x-4 p-2 rounded-lg">
+            <dt class="text-sm font-medium text-gray-500">Height</dt>
+            <dd
+              id="height"
+              class="text-base sm:text-lg text-gray-900 cursor-pointer hover:text-indigo-600 transition-colors"
+            >
+              158 <abbr title="centimeters">cm</abbr>
+            </dd>
+          </div>
+          <div class="grid grid-cols-2 gap-x-4 p-2 rounded-lg">
+            <dt class="text-sm font-medium text-gray-500">Weight</dt>
+            <dd
+              id="weight"
+              class="text-base sm:text-lg text-gray-900 cursor-pointer hover:text-indigo-600 transition-colors"
+            >
+              44 <abbr title="kilograms">kg</abbr>
+            </dd>
+          </div>
+          <div class="grid grid-cols-2 gap-x-4 p-2 rounded-lg">
+            <dt class="text-sm font-medium text-gray-500">Hair Colour</dt>
+            <dd class="flex items-center gap-2">
+              <span class="text-base sm:text-lg text-gray-900">Red</span>
+              <div
+                class="w-5 h-5 rounded-lg bg-[#DB615C] border border-gray-300 shadow-sm"
+              ></div>
+            </dd>
+          </div>
+          <div class="grid grid-cols-2 gap-x-4 p-2 rounded-lg">
+            <dt class="text-sm font-medium text-gray-500">Eye Colour</dt>
+            <dd class="flex items-center gap-2">
+              <span class="text-base sm:text-lg text-gray-900">Yellow</span>
+              <div
+                class="w-5 h-5 rounded-lg bg-[#D5D946] border border-gray-300 shadow-sm"
+              ></div>
+            </dd>
+          </div>
+
+          <div class="grid grid-cols-2 gap-x-4 p-2 rounded-lg">
+            <dt class="text-sm font-medium text-gray-500">
+              Japanese <abbr title="Voice Actor">VA</abbr>
+            </dt>
+            <dd class="text-base sm:text-lg text-gray-900">
+              Ikumi Hasegawa (長谷川 育美)
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <hr class="border-gray-200 my-10" />
+
+      <div class="prose prose-slate max-w-none">
+        <blockquote
+          class="bg-gray-50 rounded-lg p-4 border-l-4 border-gray-300 mb-6"
+        >
+          <p class="m-0">Who is this Kita Ikuyo?</p>
+        </blockquote>
+      </div>
+
+      <article id="A1" class="bg-white rounded-xl shadow-md p-6">
+        <p class="text-gray-800 leading-relaxed">
+          <span class="inline-flex items-baseline">
+            <img
+              src="../images/kita-icon.jpg"
+              alt=""
+              class="self-center w-5 h-5 rounded-full mx-1"
+            />
+            <span class="font-bold">Kita Ikuyo</span>
+          </span>
+          (喜き多た 郁いく代よ, Kita Ikuyo) is one of the main characters in the
+          manga and anime series, <em>Bocchi the Rock!</em>. She is in the first
+          year of Shuka High School and is in charge of the guitar and vocals of
+          the band,
+          <a
+            href="#A2"
+            class="underline text-gray-800 hover:text-gray-600 transition-colors"
+            >Kessoku Band</a
+          >. She started admiring Ryo Yamada after seeing her street concert.
+        </p>
+      </article>
+
+      <div class="prose prose-slate max-w-none">
+        <blockquote
+          class="bg-gray-50 rounded-lg p-4 border-l-4 border-gray-300 my-10"
+        >
+          <p class="m-0">What is the Kessoku Band?</p>
+        </blockquote>
+      </div>
+
+      <article id="A2" class="bg-white rounded-xl shadow-md p-6">
+        <p class="text-gray-800 leading-relaxed">
+          Kessoku Band (結束バンド) is a four-member rock band made up of
+          <span class="inline-flex mx-1.5 -space-x-1 align-middle">
+            <img
+              class="inline-block h-5 w-5 rounded-full ring-2 ring-white"
+              src="../images/hitori-icon.jpg"
+              alt=""
+            />
+            <img
+              class="inline-block h-5 w-5 rounded-full ring-2 ring-white"
+              src="../images/nijika-icon.jpg"
+              alt=""
+            />
+            <img
+              class="inline-block h-5 w-5 rounded-full ring-2 ring-white"
+              src="../images/ryo-icon.jpg"
+              alt=""
+            />
+            <img
+              class="inline-block h-5 w-5 rounded-full ring-2 ring-white"
+              src="../images/kita-icon.jpg"
+              alt=""
+            />
+          </span>
+          <span class="font-bold">Hitori Gotou</span> (guitar),
+          <span class="font-bold">Nijika Ijichi</span> (drums),
+          <span class="font-bold">Ryo Yamada</span> (bass), and
+          <span class="font-bold">Ikuyo Kita</span> (vocals and guitar). The
+          name "Kessoku," meaning "unity" or "bond," reflects the friendship and
+          solidarity that the members find through their music. Each member has
+          a distinct personality that shapes the group—Bocchi's quiet dedication
+          to guitar, Nijika's energetic leadership, Ryo's eccentric style, and
+          Kita's lively spirit—creating a unique and heartfelt dynamic.
+          Together, Kessoku Band embodies themes of self-discovery, friendship,
+          and the highs and lows of band life.
+        </p>
+      </article>
+    </main>
+
+    <script>
+      const element1 = document.getElementById("height");
+      const element2 = document.getElementById("weight");
+      let isMetric = true;
+
+      function switchUnits() {
+        isMetric = !isMetric;
+        if (!isMetric) {
+          element1.innerHTML = "5 feet 2.21 inches";
+          element2.innerHTML = '97 <abbr title="pounds">lbs</abbr>';
+        } else {
+          element1.innerHTML = '158 <abbr title="centimeters">cm</abbr>';
+          element2.innerHTML = '44 <abbr title="kilograms">kg</abbr>';
+        }
+      }
+
+      element1.addEventListener("click", switchUnits);
+      element2.addEventListener("click", switchUnits);
+
+      // add touch support for mobile devices
+      element1.addEventListener("touchend", (e) => {
+        e.preventDefault();
+        switchUnits();
+      });
+      element2.addEventListener("touchend", (e) => {
+        e.preventDefault();
+        switchUnits();
+      });
+    </script>
+  </body>
+</html>
