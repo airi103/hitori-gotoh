@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Bocchi the Rock!" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Bocchi - Home" />
+    <meta property="og:description" content="Bocchi the Rock!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../images/hero-image.jpg" />
+    <meta property="og:url" content="" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <style>
+      @media (max-width: 640px) {
+        .nav-text {
+          font-size: 0.875rem;
+        }
+        .logo-img {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+      }
+
+      @media (min-width: 641px) and (max-width: 1024px) {
+        .nav-text {
+          font-size: 1rem;
+        }
+        .logo-img {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+
+      .blur-bg {
+        animation: pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 0.5;
+          transform: translate(-50%, -50%) scale(1);
+        }
+        50% {
+          opacity: 0.8;
+          transform: translate(-50%, -50%) scale(1.1);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 min-h-screen">
+    <nav
+      class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100"
+    >
+      <div class="absolute inset-0 overflow-hidden">
+        <div
+          class="blur-bg absolute left-1/2 top-1/2 w-40 h-40 bg-gradient-to-r from-indigo-200/30 via-purple-200/30 to-pink-200/30 blur-3xl rounded-full"
+        ></div>
+      </div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 sm:h-20">
+          <div class="flex-1 flex justify-start">
+            <a href="characters.html" class="relative group px-3 sm:px-4">
+              <span
+                class="nav-text text-gray-800 font-medium tracking-wide group-hover:text-indigo-600 transition-colors duration-200"
+                >Characters</span
+              >
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-indigo-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-200"
+              ></span>
+            </a>
+          </div>
+
+          <div
+            class="flex-shrink-0 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+          >
+            <a
+              href="index.html"
+              class="block transition-transform duration-200 hover:scale-110"
+            >
+              <img
+                class="logo-img w-12 h-12"
+                src="../images/kessoku.svg"
+                alt="Kessoku Band"
+              />
+            </a>
+          </div>
+
+          <div class="flex-1 flex justify-end">
+            <a href="#" class="relative group px-3 sm:px-4">
+              <span
+                class="nav-text text-gray-800 font-medium tracking-wide group-hover:text-indigo-600 transition-colors duration-200"
+                >Music</span
+              >
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-indigo-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-200"
+              ></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">Kessoku Band</h1>
+        <p class="text-lg text-gray-600">
+          Welcome to the unofficial fan page of Kessoku Band
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="aspect-video mb-4">
+            <img
+              src="../images/group-display.jpg"
+              alt="Band Members"
+              class="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+          <h2 class="text-xl font-semibold mb-2">Band Members</h2>
+          <p class="text-gray-600 mb-4">
+            Meet the members of Kessoku Band and learn about their roles,
+            personalities, and contributions to the group.
+          </p>
+          <a
+            href="characters.html"
+            class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-500 transition-colors duration-200"
+          >
+            View Members
+          </a>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="aspect-video mb-4">
+            <img
+              src="../images/music-display.jpg"
+              alt="Music Collection"
+              class="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+          <h2 class="text-xl font-semibold mb-2">Discography</h2>
+          <p class="text-gray-600 mb-4">
+            Explore Kessoku Band's music collection, including their original
+            songs and performances.
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-500 transition-colors duration-200"
+          >
+            View Music
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer class="text-center text-slate-700 font-sm mx-4 mb-4">
+      <p>
+        Project's Source Code is available on my
+        <img
+          src="../images/github-mark.svg"
+          alt="GitHub"
+          class="inline-block w-4 h-4 mx-1"
+        />
+        GitHub
+        <a
+          href="https://github.com/airi103/hitori-gotoh"
+          class="underline text-gray-800 hover:text-gray-600 transition-colors"
+          >repository</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>
