@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (max-width: 640px) {
+    .nav-text {
+      font-size: 0.875rem;
+    }
+    .logo-img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
+  /* tablet styles */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .nav-text {
+      font-size: 1rem;
+    }
+    .logo-img {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  /* background animation */
+  .blur-bg {
+    animation: pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  /* pulse animation keyframes */
+  @keyframes pulse {
+    0%,
+    100% {
+      opacity: 0.5;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      opacity: 0.8;
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }

@@ -1,54 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="description" content="Kita Ikuyo - Bocchi the Rock!" />
     <meta name="HandheldFriendly" content="true" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Bocchi - Kita Ikuyo" />
+    <meta property="og:title" content="Kita Ikuyo" />
     <meta property="og:description" content="Kita Ikuyo - Bocchi the Rock!" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="images/ryo-display.jpg" />
-    <meta property="og:url" content="" />
+    <meta property="og:image" content="images/kita-display.jpg" />
     <title>Kita Ikuyo</title>
-    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-    <style>
-      @media (max-width: 640px) {
-        .nav-text {
-          font-size: 0.875rem;
-        }
-        .logo-img {
-          width: 2.5rem;
-          height: 2.5rem;
-        }
-      }
-
-      @media (min-width: 641px) and (max-width: 1024px) {
-        .nav-text {
-          font-size: 1rem;
-        }
-        .logo-img {
-          width: 3rem;
-          height: 3rem;
-        }
-      }
-
-      .blur-bg {
-        animation: pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-      }
-
-      @keyframes pulse {
-        0%,
-        100% {
-          opacity: 0.5;
-          transform: translate(-50%, -50%) scale(1);
-        }
-        50% {
-          opacity: 0.8;
-          transform: translate(-50%, -50%) scale(1.1);
-        }
-      }
-    </style>
+    <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-100 min-h-screen">
     <nav

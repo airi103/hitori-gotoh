@@ -1,73 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Bocchi the Rock!" />
+    <meta name="description" content="Discography - Bocchi the Rock!" />
     <meta name="HandheldFriendly" content="true" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Bocchi - Music" />
-    <meta property="og:description" content="Bocchi the Rock!" />
+    <meta property="og:title" content="Music" />
+    <meta property="og:description" content="Discography - Bocchi the Rock!" />
     <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/music-display.webp" />
     <meta property="og:url" content="" />
     <title>Music</title>
-    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link href="./output.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <style>
-      @media (max-width: 640px) {
-        .nav-text {
-          font-size: 0.875rem;
-        }
-        .logo-img {
-          width: 2.5rem;
-          height: 2.5rem;
-        }
-      }
-
-      @media (min-width: 641px) and (max-width: 1024px) {
-        .nav-text {
-          font-size: 1rem;
-        }
-        .logo-img {
-          width: 3rem;
-          height: 3rem;
-        }
-      }
-
-      .blur-bg {
-        animation: pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-      }
-
-      @keyframes pulse {
-        0%,
-        100% {
-          opacity: 0.5;
-          transform: translate(-50%, -50%) scale(1);
-        }
-        50% {
-          opacity: 0.8;
-          transform: translate(-50%, -50%) scale(1.1);
-        }
-      }
-
-      .album-card {
-        transition: transform 0.3s ease;
-      }
-
-      .album-card:hover {
-        transform: translateY(-5px);
-      }
-
-      .album-art {
-        transition: transform 0.3s ease;
-      }
-
-      .album-card:hover .album-art {
-        transform: scale(1.05);
-      }
-    </style>
   </head>
   <body class="bg-gray-100 min-h-screen">
     <nav
