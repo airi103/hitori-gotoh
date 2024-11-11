@@ -12,12 +12,18 @@
     <meta property="og:url" content="" />
     <title>Music</title>
     <link href="./output.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+    <link rel="icon" href="images/kessoku.svg" />
   </head>
   <body class="bg-gray-100 min-h-screen">
+    <!-- include the components -->
+    <div id="components"></div>
+    <script>
+      fetch("components.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("components").innerHTML = html;
+        });
+    </script>
     <nav
       class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100"
     >
@@ -80,7 +86,7 @@
 
     <main class="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- EP 1 -->
+        <!-- EP 16 -->
         <div class="album-card bg-white rounded-xl shadow-lg overflow-hidden">
           <div class="p-6">
             <div class="aspect-square overflow-hidden rounded-lg mb-4">
@@ -99,22 +105,36 @@
             </div>
             <div class="flex gap-3">
               <a
-                href="https://music.apple.com/us/album/we-will-ep/1765078455"
+                href="https://music.apple.com/id/album/we-will-ep/1765078455"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-apple text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#apple-music" />
+                </svg>
               </a>
+
               <a
-                href="#"
+                href="https://tidal.com/browse/album/383623820"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-tidal text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#tidal" />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.qobuz.com/us-en/album/we-will-kessoku-band/vpe8ezen6jg6b"
+                class="text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#qobuz" />
+                </svg>
               </a>
             </div>
           </div>
         </div>
 
-        <!-- EP 1 -->
+        <!-- EP 15 -->
         <div class="album-card bg-white rounded-xl shadow-lg overflow-hidden">
           <div class="p-6">
             <div class="aspect-square overflow-hidden rounded-lg mb-4">
@@ -133,21 +153,36 @@
             </div>
             <div class="flex gap-3">
               <a
-                href="https://music.apple.com/us/album/re-%E7%B5%90%E6%9D%9F%E3%83%90%E3%83%B3%E3%83%89-ep/1759525321"
+                href="https://music.apple.com/id/album/re-%E7%B5%90%E6%9D%9F%E3%83%90%E3%83%B3%E3%83%89-ep/1759525321"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-apple text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#apple-music" />
+                </svg>
               </a>
+
               <a
-                href="#"
+                href="https://tidal.com/browse/album/377993179"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-tidal text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#tidal" />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.qobuz.com/us-en/album/rekessoku-band-kessoku-band/jiny4me8c75ua"
+                class="text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#qobuz" />
+                </svg>
               </a>
             </div>
           </div>
         </div>
 
+        <!-- Single 14 -->
         <div class="album-card bg-white rounded-xl shadow-lg overflow-hidden">
           <div class="p-6">
             <div class="aspect-square overflow-hidden rounded-lg mb-4">
@@ -168,21 +203,36 @@
             </div>
             <div class="flex gap-3">
               <a
-                href="https://music.apple.com/us/album/%E3%83%89%E3%83%83%E3%83%9A%E3%83%AB%E3%82%B2%E3%83%B3%E3%82%AC%E3%83%BC-re-re-single/1759548227"
+                href="https://music.apple.com/id/album/%E3%83%89%E3%83%83%E3%83%9A%E3%83%AB%E3%82%B2%E3%83%B3%E3%82%AC%E3%83%BC-re-re-single/1759548227"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-apple text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#apple-music" />
+                </svg>
               </a>
+
               <a
-                href="#"
+                href="https://tidal.com/browse/album/377584281"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-tidal text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#tidal" />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.qobuz.com/us-en/album/doppelganger-rere-kessoku-band/gc8wrwdff2a9a"
+                class="text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#qobuz" />
+                </svg>
               </a>
             </div>
           </div>
         </div>
 
+        <!-- Single 13 -->
         <div class="album-card bg-white rounded-xl shadow-lg overflow-hidden">
           <div class="p-6">
             <div class="aspect-square overflow-hidden rounded-lg mb-4">
@@ -203,21 +253,36 @@
             </div>
             <div class="flex gap-3">
               <a
-                href="https://music.apple.com/us/album/%E6%9C%88%E4%B8%A6%E3%81%BF%E3%81%AB%E8%BC%9D%E3%81%91-%E4%BB%8A-%E5%83%95-%E3%82%A2%E3%83%B3%E3%83%80%E3%83%BC%E3%82%B0%E3%83%A9%E3%82%A6%E3%83%B3%E3%83%89%E3%81%8B%E3%82%89-single/1747836023"
+                href="https://music.apple.com/id/album/%E6%9C%88%E4%B8%A6%E3%81%BF%E3%81%AB%E8%BC%9D%E3%81%91-%E4%BB%8A-%E5%83%95-%E3%82%A2%E3%83%B3%E3%83%80%E3%83%BC%E3%82%B0%E3%83%A9%E3%82%A6%E3%83%B3%E3%83%89%E3%81%8B%E3%82%89-single/1747836023"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-apple text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#apple-music" />
+                </svg>
               </a>
+
               <a
-                href="#"
+                href="https://tidal.com/browse/album/364935643"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-tidal text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#tidal" />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.qobuz.com/us-en/album/shine-as-usual-now-im-going-from-underground-kessoku-band/y9v9iwjfdz1na"
+                class="text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#qobuz" />
+                </svg>
               </a>
             </div>
           </div>
         </div>
 
+        <!-- Album 12 -->
         <div class="album-card bg-white rounded-xl shadow-lg overflow-hidden">
           <div class="p-6">
             <div class="aspect-square overflow-hidden rounded-lg mb-4">
@@ -238,21 +303,36 @@
             </div>
             <div class="flex gap-3">
               <a
-                href="https://music.apple.com/us/album/%E7%B5%90%E6%9D%9F%E3%83%90%E3%83%B3%E3%83%89live-%E6%81%92%E6%98%9F-at-zepp-haneda-tokyo/1723006556"
+                href="https://music.apple.com/id/album/%E7%B5%90%E6%9D%9F%E3%83%90%E3%83%B3%E3%83%89live-%E6%81%92%E6%98%9F-at-zepp-haneda-tokyo/1723006556"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-apple text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#apple-music" />
+                </svg>
               </a>
+
               <a
-                href="#"
+                href="https://tidal.com/browse/album/337172322"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-tidal text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#tidal" />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.qobuz.com/us-en/album/live-at-zepp-hanedatokyo-kessoku-band/ji1c8gp89u5yc"
+                class="text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#qobuz" />
+                </svg>
               </a>
             </div>
           </div>
         </div>
 
+        <!-- EP 11 -->
         <div class="album-card bg-white rounded-xl shadow-lg overflow-hidden">
           <div class="p-6">
             <div class="aspect-square overflow-hidden rounded-lg mb-4">
@@ -271,21 +351,36 @@
             </div>
             <div class="flex gap-3">
               <a
-                href="https://music.apple.com/us/album/%E5%85%89%E3%81%AE%E4%B8%AD%E3%81%B8-ep/1685194936"
+                href="https://music.apple.com/id/album/%E5%85%89%E3%81%AE%E4%B8%AD%E3%81%B8-ep/1685194936"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-apple text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#apple-music" />
+                </svg>
               </a>
+
               <a
-                href="#"
+                href="https://tidal.com/browse/album/293741629"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-tidal text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#tidal" />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.qobuz.com/us-en/album/into-the-light-kessoku-band/ik7e3x1pvzcpbc"
+                class="text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#qobuz" />
+                </svg>
               </a>
             </div>
           </div>
         </div>
 
+        <!-- Album 10 -->
         <div class="album-card bg-white rounded-xl shadow-lg overflow-hidden">
           <div class="p-6">
             <div class="aspect-square overflow-hidden rounded-lg mb-4">
@@ -304,21 +399,36 @@
             </div>
             <div class="flex gap-3">
               <a
-                href="https://music.apple.com/us/album/%E7%B5%90%E6%9D%9F%E3%83%90%E3%83%B3%E3%83%89/1657318546"
+                href="https://music.apple.com/id/album/%E7%B5%90%E6%9D%9F%E3%83%90%E3%83%B3%E3%83%89/1657318546"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-apple text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#apple-music" />
+                </svg>
               </a>
+
               <a
-                href="#"
+                href="https://tidal.com/browse/album/263873108"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-tidal text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#tidal" />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.qobuz.com/us-en/album/kessoku-band/aqwulpsbeexla"
+                class="text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#qobuz" />
+                </svg>
               </a>
             </div>
           </div>
         </div>
 
+        <!-- Single 9 -->
         <div class="album-card bg-white rounded-xl shadow-lg overflow-hidden">
           <div class="p-6">
             <div class="aspect-square overflow-hidden rounded-lg mb-4">
@@ -339,21 +449,36 @@
             </div>
             <div class="flex gap-3">
               <a
-                href="https://music.apple.com/us/album/%E6%98%9F%E5%BA%A7%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%9F%E3%82%89-single/1657316197"
+                href="https://music.apple.com/id/album/%E6%98%9F%E5%BA%A7%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%9F%E3%82%89-single/1657316197"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-apple text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#apple-music" />
+                </svg>
               </a>
+
               <a
-                href="#"
+                href="https://tidal.com/browse/album/263873661"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-tidal text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#tidal" />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.qobuz.com/us-en/album/if-i-could-be-a-constellation-kessoku-band/ohgm5yvogaeha"
+                class="text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#qobuz" />
+                </svg>
               </a>
             </div>
           </div>
         </div>
 
+        <!-- Single 8 -->
         <div class="album-card bg-white rounded-xl shadow-lg overflow-hidden">
           <div class="p-6">
             <div class="aspect-square overflow-hidden rounded-lg mb-4">
@@ -372,21 +497,36 @@
             </div>
             <div class="flex gap-3">
               <a
-                href="https://music.apple.com/us/album/%E5%BF%98%E3%82%8C%E3%81%A6%E3%82%84%E3%82%89%E3%81%AA%E3%81%84-single/1657316798"
+                href="https://music.apple.com/id/album/%E5%BF%98%E3%82%8C%E3%81%A6%E3%82%84%E3%82%89%E3%81%AA%E3%81%84-single/1657316798"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-apple text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#apple-music" />
+                </svg>
               </a>
+
               <a
-                href="#"
+                href="https://tidal.com/browse/album/263874470"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-tidal text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#tidal" />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.qobuz.com/us-en/album/never-forget-kessoku-band/sz4p3g6muu3xc"
+                class="text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#qobuz" />
+                </svg>
               </a>
             </div>
           </div>
         </div>
 
+        <!-- Single 7 -->
         <div class="album-card bg-white rounded-xl shadow-lg overflow-hidden">
           <div class="p-6">
             <div class="aspect-square overflow-hidden rounded-lg mb-4">
@@ -407,21 +547,36 @@
             </div>
             <div class="flex gap-3">
               <a
-                href="https://music.apple.com/us/album/%E8%BB%A2%E3%81%8C%E3%82%8B%E5%B2%A9-%E5%90%9B%E3%81%AB%E6%9C%9D%E3%81%8C%E9%99%8D%E3%82%8B-single/1657316799"
+                href="https://music.apple.com/id/album/%E8%BB%A2%E3%81%8C%E3%82%8B%E5%B2%A9-%E5%90%9B%E3%81%AB%E6%9C%9D%E3%81%8C%E9%99%8D%E3%82%8B-single/1657316799"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-apple text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#apple-music" />
+                </svg>
               </a>
+
               <a
-                href="#"
+                href="https://tidal.com/browse/album/263873417"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-tidal text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#tidal" />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.qobuz.com/us-en/album/rockn-roll-morning-light-falls-on-you-kessoku-band/spk2r2mcoepcc"
+                class="text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#qobuz" />
+                </svg>
               </a>
             </div>
           </div>
         </div>
 
+        <!-- Single 6 -->
         <div class="album-card bg-white rounded-xl shadow-lg overflow-hidden">
           <div class="p-6">
             <div class="aspect-square overflow-hidden rounded-lg mb-4">
@@ -441,21 +596,36 @@
             </div>
             <div class="flex gap-3">
               <a
-                href="https://music.apple.com/us/album/%E3%81%82%E3%81%AE%E3%83%90%E3%83%B3%E3%83%89-single/1652476608"
+                href="https://music.apple.com/id/album/%E3%81%82%E3%81%AE%E3%83%90%E3%83%B3%E3%83%89-single/1652476608"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-apple text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#apple-music" />
+                </svg>
               </a>
+
               <a
-                href="#"
+                href="https://tidal.com/browse/album/259004660"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-tidal text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#tidal" />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.qobuz.com/us-en/album/that-band-kessoku-band/x73dmm6fm0muc"
+                class="text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#qobuz" />
+                </svg>
               </a>
             </div>
           </div>
         </div>
 
+        <!-- Single 5 -->
         <div class="album-card bg-white rounded-xl shadow-lg overflow-hidden">
           <div class="p-6">
             <div class="aspect-square overflow-hidden rounded-lg mb-4">
@@ -476,21 +646,36 @@
             </div>
             <div class="flex gap-3">
               <a
-                href="https://music.apple.com/us/album/%E3%81%AA%E3%81%AB%E3%81%8C%E6%82%AA%E3%81%84-single/1652476671"
+                href="https://music.apple.com/id/album/%E3%81%AA%E3%81%AB%E3%81%8C%E6%82%AA%E3%81%84-single/1652476671"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-apple text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#apple-music" />
+                </svg>
               </a>
+
               <a
-                href="#"
+                href="https://tidal.com/browse/album/259005026"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-tidal text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#tidal" />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.qobuz.com/us-en/album/what-is-wrong-with-kessoku-band/a2gx7tucqdj5b"
+                class="text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#qobuz" />
+                </svg>
               </a>
             </div>
           </div>
         </div>
 
+        <!-- Single 4 -->
         <div class="album-card bg-white rounded-xl shadow-lg overflow-hidden">
           <div class="p-6">
             <div class="aspect-square overflow-hidden rounded-lg mb-4">
@@ -512,21 +697,36 @@
             </div>
             <div class="flex gap-3">
               <a
-                href="https://music.apple.com/us/album/%E3%82%AE%E3%82%BF%E3%83%BC%E3%81%A8%E5%AD%A4%E7%8B%AC%E3%81%A8%E8%92%BC%E3%81%84%E6%83%91%E6%98%9F-single/1650726162"
+                href="https://music.apple.com/id/album/%E3%82%AE%E3%82%BF%E3%83%BC%E3%81%A8%E5%AD%A4%E7%8B%AC%E3%81%A8%E8%92%BC%E3%81%84%E6%83%91%E6%98%9F-single/1650726162"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-apple text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#apple-music" />
+                </svg>
               </a>
+
               <a
-                href="#"
+                href="https://tidal.com/browse/album/255249431"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-tidal text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#tidal" />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.qobuz.com/us-en/album/guitar-loneliness-and-blue-planet-kessoku-band/wd2q2qnmeylkb"
+                class="text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#qobuz" />
+                </svg>
               </a>
             </div>
           </div>
         </div>
 
+        <!-- Single 3 -->
         <div class="album-card bg-white rounded-xl shadow-lg overflow-hidden">
           <div class="p-6">
             <div class="aspect-square overflow-hidden rounded-lg mb-4">
@@ -546,21 +746,36 @@
             </div>
             <div class="flex gap-3">
               <a
-                href="https://music.apple.com/us/album/%E3%82%AB%E3%83%A9%E3%82%AB%E3%83%A9-single/1649508046"
+                href="https://music.apple.com/id/album/%E3%82%AB%E3%83%A9%E3%82%AB%E3%83%A9-single/1649508046"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-apple text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#apple-music" />
+                </svg>
               </a>
+
               <a
-                href="#"
+                href="https://tidal.com/browse/album/253747880"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-tidal text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#tidal" />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.qobuz.com/us-en/album/distortion-kessoku-band/fsmqomcjpps3b"
+                class="text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#qobuz" />
+                </svg>
               </a>
             </div>
           </div>
         </div>
 
+        <!-- EP 2 -->
         <div class="album-card bg-white rounded-xl shadow-lg overflow-hidden">
           <div class="p-6">
             <div class="aspect-square overflow-hidden rounded-lg mb-4">
@@ -574,27 +789,42 @@
             <div class="flex justify-between items-start mb-3">
               <div>
                 <h2 class="text-xl font-bold text-gray-900">seisyun complex</h2>
-                <p class="text-sm text-gray-600">Single • 2022</p>
+                <p class="text-sm text-gray-600">EP • 2022</p>
               </div>
               <span class="text-sm text-gray-600">14:35</span>
             </div>
             <div class="flex gap-3">
               <a
-                href="https://music.apple.com/us/album/%E9%9D%92%E6%98%A5%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%AF%E3%82%B9-ep/1646020667"
+                href="https://music.apple.com/id/album/%E9%9D%92%E6%98%A5%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%AF%E3%82%B9-ep/1646020667"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-apple text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#apple-music" />
+                </svg>
               </a>
+
               <a
-                href="#"
+                href="https://tidal.com/browse/album/250468806"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-tidal text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#tidal" />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.qobuz.com/us-en/album/kessoku-band/atkfnqxa2uiec"
+                class="text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#qobuz" />
+                </svg>
               </a>
             </div>
           </div>
         </div>
 
+        <!-- Single 1 -->
         <div class="album-card bg-white rounded-xl shadow-lg overflow-hidden">
           <div class="p-6">
             <div class="aspect-square overflow-hidden rounded-lg mb-4">
@@ -614,16 +844,30 @@
             </div>
             <div class="flex gap-3">
               <a
-                href="https://music.apple.com/us/album/distortion-single/1646030812"
+                href="https://music.apple.com/id/album/distortion-single/1646030812"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-apple text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#apple-music" />
+                </svg>
               </a>
+
               <a
-                href="#"
+                href="https://tidal.com/browse/album/249486857"
                 class="text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                <i class="fab fa-tidal text-xl"></i>
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#tidal" />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.qobuz.com/us-en/album/distortion-kessoku-band/fsmqomcjpps3b"
+                class="text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                <svg class="w-5 h-5 current-fill">
+                  <use href="#qobuz" />
+                </svg>
               </a>
             </div>
           </div>

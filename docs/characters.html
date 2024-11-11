@@ -4,86 +4,50 @@
     <meta charset="utf-8" />
     <meta
       name="description"
-      content="Bocchi the Rock!"
+      content="Characters - Bocchi the Rock!"
     />
     <meta name="HandheldFriendly" content="true" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Bocchi - Characters" />
+    <meta property="og:title" content="Characters" />
     <meta
       property="og:description"
-      content="Bocchi the Rock!"
+      content="Characters - Bocchi the Rock!"
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="images/characters-display.jpg" />
-    <meta property="og:url" content="" />
     <title>Characters</title>
-    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-    <style>
-      @media (max-width: 640px) {
-        .nav-text {
-          font-size: 0.875rem;
-        }
-        .logo-img {
-          width: 2.5rem;
-          height: 2.5rem;
-        }
-      }
-
-      @media (min-width: 641px) and (max-width: 1024px) {
-        .nav-text {
-          font-size: 1rem;
-        }
-        .logo-img {
-          width: 3rem;
-          height: 3rem;
-        }
-      }
-
-      .blur-bg {
-        animation: pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-      }
-
-      @keyframes pulse {
-        0%,
-        100% {
-          opacity: 0.5;
-          transform: translate(-50%, -50%) scale(1);
-        }
-        50% {
-          opacity: 0.8;
-          transform: translate(-50%, -50%) scale(1.1);
-        }
-      }
-    </style>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="icon" href="images/kessoku.svg" />
   </head>
   <body class="bg-gray-100 min-h-screen">
+    <!-- navigation bar -->
     <nav
       class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100"
     >
-      <!-- Animated blurred background -->
+      <!-- animated background gradient -->
       <div class="absolute inset-0 overflow-hidden">
         <div
           class="blur-bg absolute left-1/2 top-1/2 w-40 h-40 bg-gradient-to-r from-indigo-200/30 via-purple-200/30 to-pink-200/30 blur-3xl rounded-full"
         ></div>
       </div>
 
+      <!-- navigation content -->
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16 sm:h-20">
-          <!-- Left side -->
+          <!-- left side -->
           <div class="flex-1 flex justify-start">
             <a href="characters.html" class="relative group px-3 sm:px-4">
               <span
                 class="nav-text text-gray-800 font-medium tracking-wide group-hover:text-indigo-600 transition-colors duration-200"
                 >Characters</span
               >
-              <!-- Active page indicator -->
               <span
                 class="absolute bottom-0 left-0 w-full h-0.5 bg-indigo-500 scale-x-100 transition-transform duration-200"
               ></span>
             </a>
           </div>
 
-          <!-- Center logo -->
+          <!-- center logo -->
           <div
             class="flex-shrink-0 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
           >
@@ -99,7 +63,7 @@
             </a>
           </div>
 
-          <!-- Right side -->
+          <!-- right navigation link -->
           <div class="flex-1 flex justify-end">
             <a href="music.html" class="relative group px-3 sm:px-4">
               <span
